@@ -12,7 +12,9 @@ import java.util.Scanner;
 public class Registra_n {
   public static void main (String[] args){
     Scanner input = new Scanner(System.in);
-    int Año;
+    int Año=0;
+    while(Año!=1){
+        
      System.out.println("****************************************");
      System.out.println("*Bienvenido a la Registraduria Nacional*");
      System.out.println("****************************************");
@@ -26,12 +28,23 @@ public class Registra_n {
      Año = input.nextInt();
      int Edad = 2024-Año;
      
+    
+    
+     if (Año==1){
+     System.out.println("*********************");
+     System.out.println("*Programa Finalizado*");
+     System.out.println("*********************");
+     System.exit(0);
+     }
      if (Edad>=18){
      System.out.println("Ud tiene "+Edad+" Años de Edad");
      System.out.println("Ud es acto para votar");
-      }else{
+      }
+    
+     else{
      System.out.println("Ud tiene "+Edad+" Años de Edad");
      System.out.println("Ud No es acto para votar");
-  }
+   }
+  } 
  }
 }
