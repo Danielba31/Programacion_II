@@ -14,10 +14,14 @@ public class Notas {
     double promedio;
     int aprobados;
     int posicion;
-    double [] Notas ={3.5,3.6,3.8,4.0,5.0,4.8,2.5,2.8,3.0,1.5,2.0,3.5,4.2,4.1,3.7}  ;
-    double N_menor= Notas[0];
-    public void cal_notas(){
+    double [] Notas = new double[15]  ;
+   
     
+    public void Notas(double Notas[]){
+    this.Notas=Notas;
+    }
+    public void cal_notas(){
+    double N_menor= Notas[0];
      for (int i =0;i<Notas.length;i++){
      suma+=Notas[i];
      
@@ -27,7 +31,9 @@ public class Notas {
      if(Notas[i]<N_menor){
      N_menor=Notas[i];
      posicion=i;
+     
      }
+ 
      if(Notas[i]>3.0){
      aprobados++;
        }

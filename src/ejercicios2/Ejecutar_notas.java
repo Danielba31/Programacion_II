@@ -11,12 +11,16 @@ package ejercicios2;
 import java.util.Scanner; 
 public class Ejecutar_notas {
     public static void main (String[]args){
+     double[]llenar= new double[15];
     Scanner input = new Scanner(System.in);
     Notas calculos = new Notas();
         System.out.println("Bienvenido a la clase de Algebra Lineal");
-        System.out.println("vas a ver el registro de notas de la evaluacion final");
-    
+         System.out.println("ingrese el registro de notas de la evaluacion final");
+        for(int i=0;i<llenar.length;i++){
+        llenar[i]= input.nextDouble(); 
+        calculos.Notas(llenar);
+        }
     calculos.cal_notas();
-    }
-    
+     
+    } 
 }

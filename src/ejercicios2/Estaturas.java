@@ -11,13 +11,20 @@ package ejercicios2;
 import java.util.Arrays;
 public class Estaturas {
     
-    double [] estaturas ={1.70,1.65,1.69,1.71,1.67,1.68,1.66,1.77,1.75,1.79,1.74,1.83,1.80,1.63,1.64,1.72,1.73,1.74,1.75,1.75,1.76};
-    double E_malta= estaturas[0];
-    double E_mbaja=estaturas[0];
+    double [] estaturas = new double[25];
+   
     int posicion_a;
     int posicion_b;
     
+    
+    public void estaturas(double []estaturas){
+    this.estaturas=estaturas;
+    }
+    
+    
     public void calculo_e(){
+        double E_malta= estaturas[0];
+    double E_mbaja=estaturas[0];
     for(int i=0;i<estaturas.length;i++){
     if(E_malta<estaturas[i]){
      E_malta=estaturas[i];
