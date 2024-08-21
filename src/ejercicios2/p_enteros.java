@@ -11,14 +11,16 @@ package ejercicios2;
 import java.util.*;
 public class p_enteros {
     public static void main(String[]args){
+    int [] llenar = new int[10];
     Scanner input = new Scanner (System.in);
-    int num=0;
-     System.out.println("Ingrese un numero entero ");
-     Ceros cr = new Ceros();
-     Negativos neg = new Negativos();
-     Positivos pos = new Positivos();
-        pos.num_P();    
-        neg.num_N();
-        cr.num_C();
-    }
+    Positivos cal = new Positivos();
+     System.out.println("Ingrese 10 numeros entero ");
+     for(int i=0; i<llenar.length;i++){
+     llenar[i]=input.nextInt();
+  }
+     cal.tamaño(llenar);
+     
+     cal.num_P();    }
+    
+    
 }

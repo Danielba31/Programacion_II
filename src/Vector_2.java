@@ -21,7 +21,7 @@ public class Vector_2 {
      System.out.println("*Ingrese 10 numeros en su vector*");
      System.out.println("*********************************");
     
-        // Ingresar los números en el vector
+   
         for (int i = 0; i < numeros.length; i++) {
         
             numeros[i] = input.nextInt();
@@ -29,10 +29,10 @@ public class Vector_2 {
             repeticiones[numeros[i]]++;
         }
 
-        // Calcular promedio
+     
         double promedio = (double) suma / numeros.length;
 
-        // Mostrar la cantidad de repeticiones de cada número
+    
         for (int i = 0; i < repeticiones.length; i++) {
             if (repeticiones[i] > 0) {
                 System.out.println("El número " + i + " se ingresó " + repeticiones[i] + " veces.");
