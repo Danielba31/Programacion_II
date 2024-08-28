@@ -3,11 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ejercicios2;
-
-/**
- *
- * @author Daniel Barrios
- */
 public class Notas {
     double N_mayor;
     double suma;
@@ -46,6 +41,5 @@ public class Notas {
         System.out.println("El porcentaje de alumnos aprobados es: "+ porcentaje);
         System.out.println("El promedio de las notas es: "+promedio);
         System.out.println("La menor nota se encuentra en la posición: " + posicion);
-
     }
 }

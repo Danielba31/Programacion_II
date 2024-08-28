@@ -3,11 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ejercicios2;
-
-/**
- *
- * @author Daniel Barrios
- */
 import java.util.Arrays;
 public class Estaturas {
     
