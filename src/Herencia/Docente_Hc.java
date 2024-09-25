@@ -25,9 +25,12 @@ public class Docente_Hc extends Docente {
     protected int valor_h = 8300;
 
   
-    public void calcular_sueldo(){
-    int sueldo_hc =valor_h*horas_t;
-        System.out.println("el sueldo del docente "+getNombre_D()+" de la facultad de "+getFacultad()+" del cadi de "+getCadi());
-        System.out.println("es de: "+sueldo_hc);
+   
+    
+     @Override
+    public String toString(){
+      int sueldo_hc =valor_h*horas_t;
+    return "el sueldo del docente "+getNombre_D()+" de la facultad de "+getFacultad()+" del cadi de "+getCadi()+"\nes de: "+sueldo_hc  ;
     }
 }
+

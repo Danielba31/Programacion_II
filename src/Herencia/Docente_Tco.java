@@ -30,10 +30,12 @@ public class Docente_Tco extends Docente {
     public int getHoras_extras() {
         return horas_extras;
     }
-    
-    public void calcular_sueldotco(){
-     int sueldo_t =sueldo_f+horas_extrast;
-        System.out.println("el sueldo total del docente es de:  "+sueldo_t);
+  
+     
+      
+    @Override
+    public String toString(){
+         int sueldo_t =sueldo_f+horas_extrast;
+    return "su sueldo fija es de: "+ sueldo_f +"\nlas horas extras que trabajo del docente son de: "+horas_extras+"\nel sueldo total del docente es de: "+ sueldo_t;
     }
-    
 }

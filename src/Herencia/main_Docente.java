@@ -33,7 +33,7 @@ public class main_Docente {
       System.out.println("dame el numero de horas trabajadas por el docente "+nombre);
       int horas_t= input.nextInt();
       dhc.numero_H(horas_t);
-      dhc.calcular_sueldo();
+      System.out.println(dhc.toString());
       
     break;
   case 2:
@@ -49,9 +49,7 @@ public class main_Docente {
       System.out.println("indica en cuantos trabajos de grado participo del docente "+nombre);
       int t_grado = input.nextInt();
       dtco.trabajos_grado(t_grado);
-      System.out.println("su sueldo fija es de: "+dtco.getSueldo_f());
-      System.out.println("las horas extras que trabajo del docente son de: "+dtco.getHoras_extras());
-      dtco.calcular_sueldotco();
+      System.out.println(dtco.toString());
 }
     
     
