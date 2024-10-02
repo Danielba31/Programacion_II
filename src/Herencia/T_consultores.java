@@ -12,7 +12,7 @@ public class T_consultores extends Trabajadores {
     int N_proyectos,salario_t,salario_1;
     public T_consultores(int codig_t, String Nombre, String Apellido, Long telefono, Long salario, int N_proyectos){
     super(codig_t,Nombre,Apellido,telefono,salario);
-       this.N_proyectos=N_proyectos;     ;
+       this.N_proyectos=N_proyectos;     
     }
 
     
